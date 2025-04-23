@@ -1,0 +1,125 @@
+.container-bg {
+    background-color: #feca57;
+}
+
+.content-wrapper {
+    background-color: #f3f4f6;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+.header-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: white;
+}
+
+.header-subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.main-content {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 1rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .project-content {
+        flex-direction: row;
+    }
+}
+
+.project-image-container {
+    flex-shrink: 0;
+}
+
+.project-image {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .project-image {
+        height: 100%;
+        width: 12rem;
+    }
+}
+
+.project-details {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #1d4ed8;
+}
